@@ -19,15 +19,24 @@ class Animal {
 }
 
 class Dog extends Animal {
+
+    int volume = 9;
+
     @Override
     public void speak() {
-        System.out.println("The dog barks."); // Line breakpoint here
+        System.out.println("The dog barks with a volume of " + volume);
+        volume = 5;
+        System.out.println("The dog barks softly with a volume of " + volume);
     }
 }
 
 class Cat extends Animal {
+    int volume = 7;
+
     @Override
     public void speak() {
-        System.out.println("The cat meows."); // Line breakpoint here
+        System.out.println("The cat meows with a volume of " + volume);
+        volume = 3;
+        System.out.println("The cat meows softly with a volume of " + volume);
     }
 }
